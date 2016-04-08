@@ -32,5 +32,18 @@ namespace System.Drawing
         {
             return ((left.X == right.X) && (left.Y == right.Y));
         }
+
+        public override bool Equals(object obj)
+        {
+            if (!(obj is Point))
+                return false;
+
+            return (Point) obj == this;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }

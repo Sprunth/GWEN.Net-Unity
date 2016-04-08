@@ -86,11 +86,10 @@ namespace Gwen.Skin.Texturing
             m_Height = h - y;
         }
 
-        // can't have this as default param
-        /*public void Draw(Renderer.Base render, Rectangle r, Color col )
+        public void Draw(Renderer.Base render, Rectangle r)
         {
-            Draw(render, r, Color.Red);
-        }*/
+            Draw(render, r, Color.White);
+        }
 
         public void Draw(Renderer.Base render, Rectangle r, Color col)
         {
